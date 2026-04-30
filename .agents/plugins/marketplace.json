@@ -1,0 +1,20 @@
+{
+  "name": "daroon",
+  "interface": {
+    "displayName": "Daroon"
+  },
+  "plugins": [
+    {
+      "name": "daroon",
+      "source": {
+        "source": "local",
+        "path": "./plugins/daroon"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
