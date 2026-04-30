@@ -1,0 +1,43 @@
+{
+  "name": "bear",
+  "version": "0.1.0",
+  "description": "Use Bear notes through Bear's first-party BearCLI MCP server.",
+  "author": {
+    "name": "Arya",
+    "email": "dev@aryaha.com",
+    "url": "https://github.com/aryahadii/daroon"
+  },
+  "homepage": "https://github.com/aryahadii/daroon/tree/main/plugins/bear",
+  "repository": "https://github.com/aryahadii/daroon",
+  "license": "MIT",
+  "keywords": [
+    "bear",
+    "notes",
+    "mcp",
+    "bearcli",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Bear",
+    "shortDescription": "Read and write Bear notes through BearCLI.",
+    "longDescription": "Connects Codex to Bear using Bear's official BearCLI MCP server, with local guidance for safe search, reading, note creation, and edits.",
+    "developerName": "Arya",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/aryahadii/daroon/tree/main/plugins/bear",
+    "defaultPrompt": [
+      "Find my Bear notes about this topic.",
+      "Create a concise Bear note from this.",
+      "Append this update to an existing Bear note."
+    ],
+    "brandColor": "#D68B21",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

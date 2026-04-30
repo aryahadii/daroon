@@ -1,0 +1,29 @@
+#!/bin/sh
+set -eu
+
+if [ "${BEARCLI:-}" != "" ]; then
+  if [ -x "$BEARCLI" ]; then
+    exec "$BEARCLI" "$@"
+  fi
+  echo "BEARCLI is not executable: $BEARCLI" >&2
+  exit 127
+fi
+
+for candidate in \
+  "/Applications/Bear.app/Contents/MacOS/bearcli" \
+  "/Applications/Bear Beta.app/Contents/MacOS/bearcli"
+do
+  if [ -x "$candidate" ]; then
+    exec "$candidate" "$@"
+  fi
+done
+
+if command -v bearcli >/dev/null 2>&1; then
+  exec bearcli "$@"
+fi
+
+cat >&2 <<'EOF'
+BearCLI was not found. Install/update Bear 2.8+, add bearcli to PATH,
+or set BEARCLI=/path/to/bearcli.
+EOF
+exit 127

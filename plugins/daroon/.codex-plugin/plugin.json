@@ -1,0 +1,43 @@
+{
+  "name": "daroon",
+  "version": "0.1.0",
+  "description": "Local-first personal context and setup skills for AI agents.",
+  "author": {
+    "name": "Arya",
+    "email": "dev@aryaha.com",
+    "url": "https://github.com/aryahadii/daroon"
+  },
+  "homepage": "https://github.com/aryahadii/daroon",
+  "repository": "https://github.com/aryahadii/daroon",
+  "license": "MIT",
+  "keywords": [
+    "personal-context",
+    "memory",
+    "skills",
+    "local-first",
+    "agents"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Daroon",
+    "shortDescription": "Local-first personal context and setup skills for AI agents.",
+    "longDescription": "Gives Codex and similar agents a durable, file-first way to set up, read, capture, and curate personal context across projects, people, topics, logs, sources, and open loops.",
+    "developerName": "Arya",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/aryahadii/daroon",
+    "defaultPrompt": [
+      "Use Daroon context for this.",
+      "Set up Daroon.",
+      "Capture this for future continuity.",
+      "Curate recent context into durable notes."
+    ],
+    "brandColor": "#0F4AA8",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "bear": {
+      "command": "./scripts/bearcli-wrapper",
+      "args": [
+        "mcp-server"
+      ]
+    }
+  }
+}
